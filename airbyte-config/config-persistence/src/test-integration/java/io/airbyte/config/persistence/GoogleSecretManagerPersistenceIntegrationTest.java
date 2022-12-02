@@ -32,9 +32,9 @@ class GoogleSecretManagerPersistenceIntegrationTest {
 
   @BeforeEach
   void setUp() {
-//    persistence = GoogleSecretManagerPersistence.getEphemeral(
-//        configs.getSecretStoreGcpProjectId(),
-//        configs.getSecretStoreGcpCredentials());
+    // persistence = GoogleSecretManagerPersistence.getEphemeral(
+    // configs.getSecretStoreGcpProjectId(),
+    // configs.getSecretStoreGcpCredentials());
     persistence = GoogleSecretManagerPersistence.getEphemeral(
         "invalid",
         "invalid");
