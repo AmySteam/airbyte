@@ -16,6 +16,7 @@ import io.airbyte.config.persistence.split_secrets.SecretCoordinate;
 import java.io.IOException;
 import org.apache.commons.lang3.RandomUtils;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -58,6 +59,7 @@ class GoogleSecretManagerPersistenceIntegrationTest {
 
   @Test
   void testReadWriteUpdate() {
+    Assertions.fail("Trying to force a failure to see where this thing runs");
     final var coordinate1 = new SecretCoordinate(baseCoordinate, 1);
 
     // try reading non-existent value
