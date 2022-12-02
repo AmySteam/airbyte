@@ -32,9 +32,12 @@ class GoogleSecretManagerPersistenceIntegrationTest {
 
   @BeforeEach
   void setUp() {
+//    persistence = GoogleSecretManagerPersistence.getEphemeral(
+//        configs.getSecretStoreGcpProjectId(),
+//        configs.getSecretStoreGcpCredentials());
     persistence = GoogleSecretManagerPersistence.getEphemeral(
-        configs.getSecretStoreGcpProjectId(),
-        configs.getSecretStoreGcpCredentials());
+        "invalid",
+        "invalid");
     baseCoordinate = "GoogleSecretManagerPersistenceIntegrationTest_coordinate_" + RandomUtils.nextInt() % 20000;
   }
 
