@@ -24,8 +24,8 @@ import {
 } from "views/Connection/ConnectionForm/formConfig";
 import { FormCard } from "views/Connection/FormCard";
 
+import { DbtCloudTransformationsCard } from "./components/DbtCloudTransformationsCard";
 import styles from "./ConnectionTransformationTab.module.scss";
-import { DbtCloudTransformationsCard } from "./ConnectionTransformationTab/DbtCloudTransformationsCard";
 
 const CustomTransformationsCard: React.FC<{
   operations?: OperationCreate[];

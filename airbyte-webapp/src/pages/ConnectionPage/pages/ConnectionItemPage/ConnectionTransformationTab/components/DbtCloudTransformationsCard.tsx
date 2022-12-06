@@ -17,9 +17,9 @@ import { useCurrentWorkspace } from "hooks/services/useWorkspace";
 import { DbtCloudJob, isSameJob, useDbtIntegration, useAvailableDbtJobs } from "packages/cloud/services/dbtCloud";
 import { RoutePaths } from "pages/routePaths";
 
-import dbtLogo from "./dbt-bit_tm.svg";
+import dbtLogo from "../dbt-bit_tm.svg";
+import octaviaWorker from "../octavia-worker.png";
 import styles from "./DbtCloudTransformationsCard.module.scss";
-import octaviaWorker from "./octavia-worker.png";
 
 interface DbtJobListValues {
   jobs: DbtCloudJob[];

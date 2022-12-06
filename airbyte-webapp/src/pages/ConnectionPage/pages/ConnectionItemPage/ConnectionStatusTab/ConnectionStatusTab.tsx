@@ -21,8 +21,8 @@ import { FeatureItem, useFeature } from "hooks/services/Feature";
 import { useResetConnection, useSyncConnection } from "hooks/services/useConnectionHook";
 import { useCancelJob, useListJobs } from "services/job/JobService";
 
+import JobsList from "../JobsList";
 import styles from "./ConnectionStatusTab.module.scss";
-import JobsList from "./JobsList";
 
 const JOB_PAGE_SIZE_INCREMENT = 25;
 

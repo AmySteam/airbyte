@@ -9,8 +9,8 @@ import { FeatureItem, useFeature } from "hooks/services/Feature";
 import { useAdvancedModeSetting } from "hooks/services/useAdvancedModeSetting";
 import { useDeleteConnection } from "hooks/services/useConnectionHook";
 
+import { StateBlock } from "../StateBlock";
 import styles from "./ConnectionSettingsTab.module.scss";
-import { StateBlock } from "./StateBlock";
 
 export const ConnectionSettingsTab: React.FC = () => {
   const { connection } = useConnectionEditService();

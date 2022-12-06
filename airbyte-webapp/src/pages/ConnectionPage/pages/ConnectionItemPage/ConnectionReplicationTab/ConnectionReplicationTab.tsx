@@ -29,8 +29,8 @@ import {
   FormikConnectionFormValues,
 } from "views/Connection/ConnectionForm/formConfig";
 
+import { ResetWarningModal } from "../ResetWarningModal";
 import styles from "./ConnectionReplicationTab.module.scss";
-import { ResetWarningModal } from "./ResetWarningModal";
 
 export const ConnectionReplicationTab: React.FC = () => {
   const isAutoDetectSchemaChangesEnabled = useIsAutoDetectSchemaChangesEnabled();

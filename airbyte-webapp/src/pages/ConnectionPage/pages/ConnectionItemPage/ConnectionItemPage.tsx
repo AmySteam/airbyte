@@ -12,11 +12,11 @@ import {
 } from "hooks/services/ConnectionEdit/ConnectionEditService";
 
 import { ConnectionPageTitle } from "./ConnectionPageTitle";
-import { ConnectionReplicationTab } from "./ConnectionReplicationTab";
+import { ConnectionReplicationTab } from "./ConnectionReplicationTab/ConnectionReplicationTab";
 import { ConnectionSettingsRoutes } from "./ConnectionSettingsRoutes";
-import { ConnectionSettingsTab } from "./ConnectionSettingsTab";
-import { ConnectionStatusTab } from "./ConnectionStatusTab";
-import { ConnectionTransformationTab } from "./ConnectionTransformationTab";
+import { ConnectionSettingsTab } from "./ConnectionSettingsTab/ConnectionSettingsTab";
+import { ConnectionStatusTab } from "./ConnectionStatusTab/ConnectionStatusTab";
+import { ConnectionTransformationTab } from "./ConnectionTransformationTab/ConnectionTransformationTab";
 
 export const ConnectionItemPageInner: React.FC = () => {
   const { connection } = useConnectionEditService();
