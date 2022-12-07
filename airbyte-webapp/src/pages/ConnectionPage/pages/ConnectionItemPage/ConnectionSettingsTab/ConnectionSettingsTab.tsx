@@ -9,7 +9,8 @@ import { FeatureItem, useFeature } from "hooks/services/Feature";
 import { useAdvancedModeSetting } from "hooks/services/useAdvancedModeSetting";
 import { useDeleteConnection } from "hooks/services/useConnectionHook";
 
-import { StateBlock } from "../StateBlock";
+import { SchemaUpdateNotifications } from "./components/SchemaUpdateNotifications";
+import { StateBlock } from "./components/StateBlock";
 import styles from "./ConnectionSettingsTab.module.scss";
 
 export const ConnectionSettingsTab: React.FC = () => {
@@ -23,6 +24,7 @@ export const ConnectionSettingsTab: React.FC = () => {
 
   return (
     <div className={styles.container}>
+      <SchemaUpdateNotifications />
       {canUpdateDataResidency && <UpdateConnectionDataResidency />}
       {isAdvancedMode && <StateBlock connectionId={connection.connectionId} />}
       <DeleteBlock type="connection" onDelete={onDelete} />

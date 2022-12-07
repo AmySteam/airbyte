@@ -155,6 +155,7 @@
   "connectionForm.nonBreakingChangesPreference.message": "Set how Airbyte handles syncs when it detects a non-breaking schema change in the source",
   "connectionForm.nonBreakingChangesPreference.ignore": "Ignore",
   "connectionForm.nonBreakingChangesPreference.disable": "Pause sync",
+  "connectionForm.schemaUpdateNotifications.info": "Send notifications when your source schema has changed",
 
   "connectionForm.modal.destinationNamespace.title": "Destination namespace",
   "connectionForm.modal.destinationNamespace.option.source": "Mirror source structure",
